@@ -1,0 +1,31 @@
+<section id="single-quote" class="divider-section">
+	<div class="container">
+		<div class="gap"></div>
+		<div class="row">
+			<div class='col-md-offset-2 col-md-8 fade-up'>
+				<div class="carousel slide" data-ride="carousel" id="quote-carousel">
+					<div class="carousel-inner">
+						<div class="item active">
+							<blockquote>
+								<div class="row">
+
+									<div class="col-sm-12">
+										<p class="quote">
+											<i class="fas fa-quote-left"></i>
+
+											{{ .Site.Params.catchphrase.phrase }}
+
+											<i class="fas fa-quote-right"></i>
+										</p>
+										<small>{{ .Site.Params.catchphrase.subtext }}</small>
+									</div>
+								</div>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="gap"></div>
+	</div>
+</section>

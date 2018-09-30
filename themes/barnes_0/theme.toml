@@ -1,0 +1,20 @@
+# theme.toml template for the Barnes_0 theme
+
+name = "Barnes_0"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
+description = "Theme for Barnes and Boveri"
+homepage = "http://example.com/"
+tags = []
+features = []
+min_version = "0.38"
+
+[author]
+  name = ""
+  homepage = ""
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""

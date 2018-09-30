@@ -1,0 +1,67 @@
+<section id="pricing" class="white">
+  <div class="container">
+    <div class="center gap fade-down section-heading">
+      <h2 class="main-title"> {{ .Site.Params.business.title }}</h2>
+      <hr>
+      <p>{{ .Site.Params.business.subtitle}}</p>
+    </div>
+    <div class="gap"></div>
+    <div class="row">
+      <div class="col-md-12 fade-up">
+        <p>{{ .Site.Params.business.paragraph}}</p>
+        <br>
+        <ul>
+          <li>{{ .Site.Params.business.p1 }}</li>
+          <li>{{ .Site.Params.business.p2 }}</li>
+          <li>{{ .Site.Params.business.p3 }}</li>
+          <li>{{ .Site.Params.business.p4 }}</li>
+
+        </div>
+
+      </div>
+      <div class="gap"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="center gap fade-down section-heading">
+            <h2 class="main-title">{{ .Site.Params.business.advantages.title }}</h2>
+            <hr>
+
+          </div>
+        </div>
+      </div>
+      <div id="pricing-table" class="row">
+        <div class="col-md-3 col-xs-6 flip-in">
+          <ul class="plan plan2 featured">
+            <li class="plan-name">
+              <h3>{{ .Site.Params.business.advantages.punto1.title }}</h3>
+            </li>
+            <li class="ventajas">{{ .Site.Params.business.advantages.punto1.paragraph }}</li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6 flip-in">
+          <ul class="plan plan2 featured">
+            <li class="plan-name">
+              <h3>{{ .Site.Params.business.advantages.punto2.title }}</h3>
+            </li>
+            <li class="ventajas">{{ .Site.Params.business.advantages.punto2.paragraph }}</li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6 flip-in">
+          <ul class="plan plan2 featured">
+            <li class="plan-name">
+              <h3>{{ .Site.Params.business.advantages.punto3.title }}</h3>
+            </li>
+            <li class="ventajas">{{ .Site.Params.business.advantages.punto3.paragraph }}</li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6 flip-in">
+          <ul class="plan plan2 featured">
+            <li class="plan-name">
+              <h3>{{ .Site.Params.business.advantages.punto4.title }}</h3>
+            </li>
+            <li class="ventajas">{{ .Site.Params.business.advantages.punto4.paragraph }}</li>
+          </ul>
+        </div>
+        <div class="gap"></div>
+      </div>
+    </section>

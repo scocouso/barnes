@@ -1,0 +1,72 @@
+<section id="about-us" class="white">
+  <div class="container">
+    <div class="gap"></div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="center gap fade-down section-heading">
+          <h2 class="main-title">{{ .Site.Params.about_us.title }}</h2>
+          <hr>
+          <p>{{ .Site.Params.about_us.subtitle }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 fade-up">
+        <p>{{ .Site.Params.about_us.p1 }}</p>
+        <p>{{ .Site.Params.about_us.p2 }}</p>
+        <p>{{ .Site.Params.about_us.p3 }}</p>
+        <p>{{ .Site.Params.about_us.p4 }}</p>
+        <p>{{ .Site.Params.about_us.p5 }}</p>
+        </div>
+        <div class="col-md-4 fade-up">
+
+        </div>
+      </div>
+      <div class="gap"></div>
+
+      <div class="gap"></div>
+      <div class="center gap fade-down section-heading">
+        <h2 class="main-title">{{ .Site.Params.team.title }}</h2>
+        <hr>
+
+      </div>
+      <div class="gap"></div>
+
+      <div id="meet-the-team" class="row">
+        <div class="col-md-5 col-md-offset-1 col-xs-12">
+          <div class="center team-member">
+            <div class="team-image">
+              <img class="img-responsive img-thumbnail bounce-in" src="images/team/jaime.jpeg" alt="">
+              <div class="overlay">
+                <a class="preview btn btn-outlined btn-primary" href="images/team/jaime.jpeg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+              </div>
+            </div>
+            <div class="team-content fade-up">
+              <h5>{{ .Site.Params.team.member1.name }}<small class="role muted">{{ .Site.Params.team.member1.job }}</small></h5>
+              <p>{{ .Site.Params.team.member1.description }}</p>
+              <a class="btn btn-social btn-linkedin" href="{{ .Site.Params.team.member1.linkedin }}"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5  col-xs-12">
+          <div class="center team-member">
+            <div class="team-image">
+              <img class="img-responsive img-thumbnail bounce-in" src="images/team/angeles.jpeg" alt="">
+              <div class="overlay">
+                <a class="preview btn btn-outlined btn-primary" href="images/team/angeles.jpeg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+              </div>
+            </div>
+            <div class="team-content fade-up">
+              <h5>{{ .Site.Params.team.member2.name }}<small class="role muted">{{ .Site.Params.team.member2.job }}</small></h5>
+              <p>{{ .Site.Params.team.member2.description }}</p>
+              <a class="btn btn-social btn-linkedin" href="{{ .Site.Params.team.member2.linkedin }}"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div><!--/#meet-the-team-->
+      <div class="gap"></div>
+      <div class="gap"></div>
+    </div>
+  </section>

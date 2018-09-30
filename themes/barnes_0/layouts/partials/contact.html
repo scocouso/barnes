@@ -1,0 +1,39 @@
+<section id="contact" class="white">
+               <div class="container">
+                 <div class="gap"></div>
+                   <div class="center gap fade-down section-heading">
+                       <h2 class="main-title">{{ .Site.Params.contact.title }}</h2>
+                       <hr>
+                       <p>{{ .Site.Params.contact.subtitle }}</p>
+                   </div>
+                   <div class="gap"></div>
+                   <div class="row">
+                       <div class="col-md-4 fade-up">
+                           <h3>{{ .Site.Data.address.sidetitle }}</h3>
+                           <br>
+                           <br>
+                           <p><i class="fas fa-map-marker"></i> {{ .Site.Data.address.address }}<br/> {{ .Site.Data.address.city }}<br/>
+                               <i class="fas fa-phone"></i> {{ .Site.Data.address.phone }}<br/>
+                               <i class="fas fa-envelope"></i><a href="#"> {{ .Site.Data.address.email }}</a> <br/>
+                           </p>
+
+                       </div><!-- col -->
+
+                       <div class="col-md-8 fade-up">
+                           <h3>{{ .Site.Params.contact.form.title }}</h3>
+                           <br>
+                           <br>
+                           <div id="message"></div>
+                           <form method="post" action="sendemail.php" id="contactform">
+                               <input type="text" name="name" id="name" placeholder="{{ .Site.Params.contact.form.name }}" />
+                               <input type="text" name="email" id="email" placeholder="{{ .Site.Params.contact.form.email }}" />
+                               <input type="text" name="website" id="website" placeholder="{{ .Site.Params.contact.form.company }}" />
+                               <textarea name="comments" id="comments" placeholder="{{ .Site.Params.contact.form.message }}"></textarea>
+                               <input class="btn btn-outlined btn-primary" type="submit" name="submit" value="{{ .Site.Params.contact.form.button }}" />
+                           </form>
+                       </div><!-- col -->
+                   </div><!-- row -->
+                   <div class="gap"></div>
+               </div>
+           </section>
+       </div>

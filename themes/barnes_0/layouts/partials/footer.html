@@ -1,0 +1,55 @@
+<div id="footer-wrapper">
+        <section id="bottom" class="">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3 col-md-offset-1 col-sm-6 about-us-widget">
+                        <h4>{{ .Site.Params.footer.text.title }}</h4>
+                        <p>{{ .Site.Params.footer.text.paragraph }}</p>
+                    </div><!--/.col-md-3-->
+
+                    <div class="col-md-3 col-md-offset-1 col-sm-6">
+                        <h4>Barnes&Boveri</h4>
+                        <div>
+                            <ul>
+                              {{ range .Site.Menus.footer }}
+                                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                              {{ end }}
+                            </ul>
+                        </div>
+                    </div><!--/.col-md-3-->
+
+                    <div class="col-md-3 col-md-offset-1 col-sm-6">
+                        <h4>{{ .Site.Data.address.title }}</h4>
+                        <address>
+                            {{ .Site.Data.address.address }}<br/>
+                            {{ .Site.Data.address.city }}<br>
+                            <br> <abbr title="Phone"><i class="fa fa-phone"></i></abbr> {{ .Site.Data.address.phone }}<br>
+                            <i class="fas fa-envelope"></i> {{ .Site.Data.address.email }}<br/>
+                        </address>
+                    </div> <!--/.col-md-3-->
+                </div>
+            </div>
+        </section><!--/#bottom-->
+
+
+        <footer id="footer" class="">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                &copy; 2018 <a target="_blank" href="" title="">Barnes and Boveri</a>. All Rights Reserved.
+              </div>
+              <div class="col-sm-6">
+                <ul class="pull-right">
+                  <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li><!--#gototop-->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer><!--/#footer-->
+</div>
+
+<script src="{{ .Site.BaseURL }}js/plugins.js"></script>
+<script src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/jquery.prettyPhoto.js"></script>
+<script src="{{ .Site.BaseURL }}js/init.js"></script>
